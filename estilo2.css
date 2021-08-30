@@ -1,61 +1,105 @@
 body{
-	margin:0;
+	margin: 0;
 	background: #428bca;
+	
 }
 
-.contender{
+.contenedor{
+
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
+
 }
 
-.caja:nth-child(1){
-	margin: 150px 15px;
-     width: 150px;
-     height: 150px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     background: #428bca;
-	font-size: 40px;
-	text-aling: center;
-	line-height: 150x;
+.cuadrado{
+	
+	margin: 100px 50px;
+	width: 100px;
+	height: 100px;
+	background: #76b933;
+	font.size: 15px;
+	text-align: center;
+	line-height: 100px;
+	margin: 15px;
+	transition: all 2s;
+	-webkit-transition: 1s linear;
+
 }
 
-.caja:nth-child(2){
-     margin: 150px 15px;
-     width: 0; 
-     height: 0; 
-     border-left: 150px solid #f0ad4e;
-     border-top: 70px solid transparent;
-     border-bottom: 100px solid transparent;
-     background: #428bca;
-     font-size: 40px;
-     text-aling: left;
-     line-height: 150x;
+.cuadrado:hover{
+
+	background: purple;
+	-webkit-transform: rotate(300deg);
+  	transform: rotate(300deg);
 }
 
-.caja:nth-child(1){
-	margin: 150px 15px;
-     width: 150px;
-     height: 150px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     background: #428bca;
-	font-size: 40px;
-	text-aling: center;
-	line-height: 150x;
+
+
+.circulo{
+	width: 100px;
+	height: 100px;
+	background: #76b933;
+	border-radius: 50%;	
+	font.size: 15px;
+	text-align: center;
+	line-height: 100px;
+	margin: 15px;
+	transition: all 2s;
+	-webkit-transition: 1s linear;
 }
 
-.caja:nth-child(1){
-	margin: 150px 15px;
-     width: 150px;
-     height: 150px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     background: crimson;
-	font-size: 40px;
-	text-aling: center;
-	line-height: 150x;
+.circulo:hover{
+
+	background: purple;
+	-webkit-transform: scale(2);
+  	transform: scale(2);
+
+}
+
+.triangulo{
+	width: 0px;
+	height: 0px;
+  	border-top:0px solid transparent ;
+  	border-bottom:100px solid #8AC007 ;
+  	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	font.size: 15px;
+	text-align: center;
+	line-height: 100px;
+	margin: 15px;
+	transition: all 2s;
+	-webkit-transition: 1s linear;
+
+}
+
+.triangulo:hover{
+
+	border-bottom:100px solid purple;
+	-webkit-transform: translate(25%);
+  	transform: translate(25%);
+
+}
+
+.trapecio{
+	width: 100px;
+	height: 0px;
+  	border-top:0px solid transparent ;
+  	border-bottom:100px solid #8AC007 ;
+  	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	font.size: 15px;
+	text-align: center;
+	line-height: 100px;
+	margin: 15px;
+	transition: all 2s;
+	-webkit-transition: 1s linear;
+	
+}
+
+.trapecio:hover{
+	
+	border-bottom:100px solid purple ;
+	-webkit-transform: skewY(10deg);
+	transform: skewY(10deg);
+
 }
